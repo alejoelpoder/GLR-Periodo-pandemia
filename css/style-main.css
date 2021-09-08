@@ -1,0 +1,430 @@
+@font-face {
+  font-family: "Typewriter";
+  src: url("../fonts/JMH-Typewriter-Black.ttf");
+}
+
+* {
+  font-family: "Typewriter", arial;
+}
+
+button:focus {
+  background-color: rgba(255, 228, 196, 0) !important;
+}
+
+.portada {
+    height: 100vh;
+    width: 100%;
+    background-image: url('../media/fondo.jpg');
+    position: relative;
+    border-bottom: solid 2px #fff;
+  }
+
+  .portada-mobile-img {
+    display: none;
+  }
+
+  .portada p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 70px;
+    font-size: 33px;
+    margin-left: -297px;
+    width: 860px;
+  }
+
+blockquote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+  
+.data {
+    background-size: contain;
+    float: left;
+    width: 300px;
+    height: 100vh;
+    background-image: url('../media/fondo-data.jpg');
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+    color: #fff;
+    border-right: solid 2px #fff;
+  }
+  .data-content {
+    display: flex;
+    height: 33.3%;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .año-fecha {
+    height: 24%;
+  }
+  .casos-site {
+    margin-bottom: 40px;
+  }
+  .año {
+    text-align: center;
+    font-size: 42px;
+  }
+  .fecha {
+    text-align: center;
+    margin: 0 auto;
+    font-size: 23px;
+  }
+  .casos, .fallecidos {
+    text-align: center;
+    font-size: 23px;
+    margin: 0;
+  }
+  .fallecidos {
+    font-size: 19px;
+  }
+  .casos-num, .fallecidos-num {
+    text-align: center;
+    font-size: 42px;
+    margin: 10px;
+  }
+  .curve_chart, .curve_chart-f {
+    width: 300px;
+    height: 500px
+  }
+
+  .C-slide h2 {
+    text-align: center;
+  }
+  .C-slide p {
+    max-width: 1000px;
+    text-transform: none;
+    font-size: 17px;
+    text-align: justify;
+  }
+
+  .media {
+    transform: rotate(-1deg);
+    position: relative;
+    width: 90%;
+    filter: drop-shadow(5px 2px);
+  }
+  .media img {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .t-l, .t-r, .b-l, .b-r {
+    position: absolute;
+    height: 40px;
+    width: 100px;
+    background-color: rgb(235 220 211 / 80%);
+  }
+
+  .t-l {
+    top: 2px;
+    left: -32px;
+    transform: rotate(-43deg);
+  }
+  .t-r {
+    top: -4px;
+    right: -29px;
+    transform: rotate(43deg);
+  }
+  .b-l {
+    bottom: 25px;
+    right: -29px;
+    transform: rotate(-43deg);
+  }
+  .b-r {
+    bottom: 12px;
+    left: -29px;
+    transform: rotate(43deg);
+  }
+
+  .papel .t-l {
+    top: 180px;
+    left: 11px;
+  }
+
+  .papel .t-r {
+    top: 155px;
+    right: 30px;
+  }
+
+  .papel .b-l {
+    bottom: 181px;
+    right: 34px;
+  }
+
+  .papel .b-r {
+    bottom: 164px;
+    left: 22px;
+  }
+
+  .papel p {
+    position: absolute;
+    max-width: 500px;
+  }
+
+  .C-carousel span {
+    font-size: 10px;
+    padding-bottom: 10px;
+    text-align: right;
+    padding-left: 63%;
+  }
+
+  .calendar-mobile {
+    display: none;
+  }
+
+  .papel-mobile {
+    position: relative !important;
+  }
+  .papel-mobile img {
+    height: 700px !important;
+    position: absolute !important;
+    top: 50% !important;
+    margin-top: -350px !important;
+  }
+  .papel-mobile p {
+    position: absolute !important;
+    top: 50% !important;
+    max-width: 500px !important;
+    margin-top: -91px !important;
+    left: 50% !important;
+    margin-left: -257px !important;
+  }
+
+  @media (max-width: 1400px) {
+    .C-slide p {
+      max-width: 800px;
+      font-size: 15px;
+    }
+    .C-carousel span {
+      margin-top: 10px;
+    }
+    .papel p {
+      max-width: 428px;
+      font-size: 14px;
+    }
+
+    .papel .t-l {
+      display: none;
+    }
+  
+    .papel .t-r {
+      display: none;
+    }
+  
+    .papel .b-l {
+      display: none;
+    }
+  
+    .papel .b-r {
+      display: none;
+    }
+  }
+
+  
+
+  @media (max-width: 1112px) {
+    .data {
+      width: 250px;
+    }
+    .C-carousel {
+      width: calc(100% - 250px) !important;
+    }
+    .año, .casos-num, .fallecidos-num {
+      font-size: 39px;
+    }
+    .fecha, .casos {
+      font-size: 20px;
+    }
+    .t-l, .t-r, .b-l, .b-r {
+      display: none;
+    }
+    .media {
+      width: 97%;
+    }
+    .C-slide h2 {
+      font-size: 32px;
+    }
+    .quote-1 {
+      font-size: 37px;
+      border: none;
+      margin-left: -266px;
+      text-align: justify;
+      width: 678px;
+      margin-top: -200px;
+    }
+    .portada-img {
+      display: none;
+    }
+    .portada-mobile-img {
+      display: block;
+    }
+    .quote-1 {
+      font-size: 37px;
+      border: none;
+      margin-left: -228px;
+      text-align: justify;
+      width: 456px;
+      margin-top: -275px;
+    }
+    .portada p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: 70px;
+      font-size: 23px;
+      margin-left: -207px;
+      width: 456px;
+  }
+  }
+
+  @media (max-width: 813px) {
+    .C-carousel, .data {
+      display: none;
+    }
+    .calendar-mobile {
+      display: block;
+      width: 100%;
+      height: 100vh;
+      background-image: url('../media/fondo.jpg');
+    }
+
+    .calendar-mobile h2 {
+      font-size: 30px;
+      margin: 0;
+      text-align: center;
+      padding-top: 50px;
+    }
+    
+    .calendar-mobile h3 {
+      margin: 0;
+      padding-top: 20px;
+      padding-left: 20px;
+      font-size: 20px;
+    }
+
+    .calendar-mobile img {
+      width: 100%;
+      margin-top: 50px;
+    }
+
+    .calendar-mobile p {
+      padding: 20px 20px 0;
+      font-size: 18px;
+      text-align: justify;
+      margin: 0;
+      margin-bottom: 18px;
+    }
+
+    .calendar-mobile span {
+      padding: 10px 20px;
+      display: block;
+      font-size: 18px;
+    }
+
+    .credito-foto {
+      font-size: 13px !important;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .calendar-mobile h3 {
+      font-size: 15px
+    }
+    .calendar-mobile h2 {
+      font-size: 20px
+    }
+    .calendar-mobile p {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+    .calendar-mobile span {
+      font-size: 17px;
+      padding: 5px 20px;
+    }
+    .quote-1 {
+      font-size: 26px;
+      border: none;
+      margin-left: -165px;
+      text-align: justify;
+      width: 330px;
+      margin-top: -215px;
+    }
+
+    .papel-mobile p {
+      max-width: 335px !important;
+      margin-left: -175px !important;
+    }
+    .portada p {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-top: 42px;
+      font-size: 20px;
+      margin-left: -147px;
+      width: 330px;
+    }
+  }
+
+  @media (max-height: 800px) {
+    .año-fecha {
+      height: 10% !important;
+      margin-bottom: 80px !important;
+      margin-top: 20px !important;
+    }
+    .casos-num, .fallecidos-num {
+      font-size: 25px !important;
+    }
+    .casos, .fallecidos {
+      font-size: 19px !important;
+    }
+    .fallecidos {
+      font-size: 16px !important;
+    }
+    .casos-site {
+      margin-bottom: 10px !important;
+    }
+    .C-slide-title {
+      font-size: 38px !important;
+    }
+    .C-slide p {
+      font-size: 12px !important;
+      margin-top: 0 !important;
+    }
+    .media {
+      width: 70% !important;
+    }
+    .f-site {
+      margin-top: 50px;
+    }
+  }
+  @media (max-height: 680px) {
+    .calendar-mobile p {
+      font-size: 11px;
+      margin-bottom: 15px;
+    }
+    .calendar-mobile span {
+      font-size: 12px;
+    }
+    .calendar-mobile p {
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+    .casos-site {
+      margin-bottom: 0px !important;
+    }
+    .año-fecha {
+      height: 10% !important;
+      margin-bottom: 73px !important;
+      margin-top: 4px !important;
+    }
+  }
+  @media (max-height: 400px) {
+    .calendar-mobile {
+      height: 900px;
+    }
+  }
